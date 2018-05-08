@@ -1,0 +1,26 @@
+{
+    "private": true,
+    "name": "test-md5-tools",
+    "description": "TODO",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "https://piecioshka.pl/"
+    },
+    "scripts": {
+        "clear": "",
+        "clear:all": "rm -rf node_modules/ && npm run clear",
+        "count": "find . -name '*.js' -not -path './node_modules/*' | xargs wc -l | sort -r"
+    },
+    "dependencies": {
+        "crypto-js": "^3.1.9-1",
+        "js-md5": "^0.7.3"
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:piecioshka/test-md5-tools.git"
+    }
+}
