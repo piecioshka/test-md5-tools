@@ -1,5 +1,9 @@
 # test-md5-tools
 
+[![dependencies](https://david-dm.org/piecioshka/test-md5-tools.svg)](https://github.com/piecioshka/test-md5-tools)
+[![travis](https://img.shields.io/travis/piecioshka/test-md5-tools.svg)](https://travis-ci.org/piecioshka/test-md5-tools)
+[![snyk](https://snyk.io/test/github/piecioshka/test-md5-tools/badge.svg?targetFile=package.json)](https://snyk.io/test/github/piecioshka/test-md5-tools?targetFile=package.json)
+
 :ledger: Testing popular crypto libraries to check building MD5 hashes
 
 ## How to run tests?
