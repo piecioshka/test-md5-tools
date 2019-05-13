@@ -9,8 +9,8 @@ const { test } = require('../src/test');
 const differences = [];
 const limits = Array.from({ length: 90 - 48 }).map((x, i) => i + 48);
 const chars = limits.map((ascii) => String.fromCharCode(ascii));
-// const chars = [0, 'b', 'c', 9, '-'];
-const variations = 3; // max length of tested word
+chars.unshift('-', '_', '|', '!', '#', '&', '*');
+const variations = 4; // max length of tested word
 
 let spinner = null;
 
