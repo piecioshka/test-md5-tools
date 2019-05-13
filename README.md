@@ -19,6 +19,13 @@ npm test
 2. In file `src/plugins/index.js` export your custom plugin
 3. Exec a command: `npm start`
 
+## Iterations
+
+* for max length word = 1 — `49`
+* for max length word = 2 — `2 450`
+* for max length word = 3 — `120 099`
+* for max length word = 4 — `~5M` (my computer can't embrace that)
+
 ## Related
 
 * [dicts](https://github.com/piecioshka/dicts)

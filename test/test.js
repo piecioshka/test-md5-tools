@@ -18,8 +18,10 @@ function recordResult(r) {
     return `${r.string}:\n${r.result.map((d) => `\t - ${d.libName}: ${d.hash}`).join('\n')}`;
 }
 
-function displayResults() {
+function displayResults(iterations) {
     spinner.stop();
+
+    console.log(`Number of iterations: ${iterations}`);
 
     if (differences.length > 0) {
         console.log('Differences found:');
@@ -37,14 +39,16 @@ function displayResults() {
 function main() {
     spinner = ora('Loading...').start();
     const gen = generate(chars, variations);
+    let iterations = 0;
 
     for (const record of gen) {
-        spinner.text = `Testing phrase: '${record}'`;
+        iterations++;
+        spinner.text = `Testing phrase: '${record}' (iterations: ${iterations})`;
         spinner.render();
         test(plugins, differences, record);
     }
 
-    displayResults();
+    displayResults(iterations);
 }
 
 main();
