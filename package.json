@@ -1,8 +1,8 @@
 {
     "private": true,
     "name": "test-md5-tools",
-    "description": "TODO",
-    "version": "1.0.0",
+    "description": "",
+    "version": "0.0.0",
     "license": "MIT",
     "author": {
         "name": "Piotr Kowalski",
@@ -10,13 +10,14 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
-        "clear": "",
-        "clear:all": "rm -rf node_modules/ && npm run clear",
-        "count": "find . -name '*.js' -not -path './node_modules/*' | xargs wc -l | sort -r"
+        "test": "node test/test.js"
     },
     "dependencies": {
+        "@types/node": "^12.0.1",
+        "brute-force-generator": "^1.0.1",
         "crypto-js": "^3.1.9-1",
-        "js-md5": "^0.7.3"
+        "js-md5": "^0.7.3",
+        "ora": "^3.4.0"
     },
     "devDependencies": {},
     "repository": {

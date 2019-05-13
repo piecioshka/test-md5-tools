@@ -1,19 +1,24 @@
-# test-md5-tools 
+# test-md5-tools
 
-> Verify common crypto libraries to check correction of building MD5 hash
+:ledger: Testing popular crypto libraries to check building MD5 hashes
 
-## Install
+## How to run tests?
 
-```
-$ npm install test-md5-tools
+```bash
+npm start
 ```
 
 ## How to add a new library?
 
-1. Create `*.js` file
-2. Module should export method `encode`
-3. Import module info `index.js` file
-4. Run tests
+1. Create file: `src/plugins/[name]/*.js`
+    + Module should export method `encode`
+2. In file `src/plugins/index.js` export your custom plugin
+3. Exec a command: `npm start`
+
+## Related
+
+* [dicts](https://github.com/piecioshka/dicts)
+* [brute-force-generator](https://github.com/piecioshka/brute-force-generator)
 
 ## License
 
