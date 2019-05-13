@@ -9,4 +9,3 @@ function encode(string) {
 module.exports = {
     encode
 };
-

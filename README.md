@@ -9,13 +9,13 @@
 ## How to run tests?
 
 ```bash
-npm start
+npm test
 ```
 
 ## How to add a new library?
 
 1. Create file: `src/plugins/[name]/*.js`
-    + Module should export method `encode`
+    + Module should export one method `encode()`
 2. In file `src/plugins/index.js` export your custom plugin
 3. Exec a command: `npm start`
 
