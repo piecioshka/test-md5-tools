@@ -8,7 +8,7 @@ const { logger } = require('../src/logger');
 
 const differences = [];
 const chars = buildChars();
-const VARIATIONS = 4; // max length of tested word
+const VARIATIONS = 5; // max length of tested word
 const ERROR_CODE_DIFFERENCES_EXIST = 1;
 
 function buildChars() {
