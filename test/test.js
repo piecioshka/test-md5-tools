@@ -7,27 +7,32 @@ const { test } = require('../src/test');
 const { logger } = require('../src/logger');
 
 const differences = [];
-const limits = Array.from({ length: 90 - 48 }).map((x, i) => i + 48);
-const chars = limits.map((ascii) => String.fromCharCode(ascii));
-chars.unshift('-', '_', '|', '!', '#', '&', '*');
-const variations = 3; // max length of tested word
+const chars = buildChars();
+const VARIATIONS = 4; // max length of tested word
+const ERROR_CODE_DIFFERENCES_EXIST = 1;
+
+function buildChars() {
+    const limits = Array.from({ length: 90 - 48 }).map((x, i) => i + 48);
+    const chars = limits.map((ascii) => String.fromCharCode(ascii));
+    chars.unshift('-', '_', '|', '!', '#', '&', '*');
+    return chars;
+}
 
 function displayResults(iterations) {
     logger.completed(iterations);
 
     if (differences.length > 0) {
         logger.completedFailure(differences);
-        process.exit(1);
+        process.exit(ERROR_CODE_DIFFERENCES_EXIST);
     } else {
         logger.completedOk();
-        process.exit(0);
     }
 }
 
 function main() {
     logger.start();
 
-    const gen = generate(chars, variations);
+    const gen = generate(chars, VARIATIONS);
     let iterations = 0;
 
     for (const record of gen) {
