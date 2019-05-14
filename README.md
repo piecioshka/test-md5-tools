@@ -24,7 +24,7 @@ npm test
 * for max length word = 1 — `49`
 * for max length word = 2 — `2 450`
 * for max length word = 3 — `120 099`
-* for max length word = 4 — `~5M` (my computer can't embrace that)
+* for max length word = 4 — `5 884 900`
 
 ## Related
 
