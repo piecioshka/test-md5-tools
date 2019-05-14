@@ -17,7 +17,8 @@
         "brute-force-generator": "^1.0.1",
         "crypto-js": "^3.1.9-1",
         "js-md5": "^0.7.3",
-        "ora": "^3.4.0"
+        "ora": "^3.4.0",
+        "what-time": "0.0.2"
     },
     "devDependencies": {},
     "repository": {
