@@ -1,8 +1,5 @@
 # test-md5-tools
 
-[![travis-ci](https://api.travis-ci.com/piecioshka/test-md5-tools.svg?branch=master)](https://app.travis-ci.com/github/piecioshka/test-md5-tools)
-[![snyk](https://snyk.io/test/github/piecioshka/test-md5-tools/badge.svg?targetFile=package.json)](https://snyk.io/test/github/piecioshka/test-md5-tools?targetFile=package.json)
-
 :ledger: Testing popular crypto libraries to check building MD5 hashes
 
 ## How to run tests?
